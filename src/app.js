@@ -7,5 +7,8 @@ const theatersRouter = require("./theaters/theaters.router");
 const reviewsRouter = require("./reviews/reviews.router");
 
 // TODO: Add your code here
+app.get("/", (req, res) => {
+    res.send("hello");
+})
 
 module.exports = app;
