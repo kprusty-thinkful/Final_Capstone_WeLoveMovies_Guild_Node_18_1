@@ -21,6 +21,19 @@ async function list() {
     .then(reduceMovies);
 }
 
+async function listTheatersWithMovie(movieId) {
+  return db("theaters")
+      .join(
+          "movies_theaters",
+          "movies_theaters.theater_id",
+          "theaters.theater_id"
+      )
+      .join("movies", "movies.movie_id", "movies_theaters.movie_id")
+      .where({"movies.movie_id": movieId})
+      .then(reduceMovies);
+}
+
 module.exports = {
   list,
+  listTheatersWithMovie,
 };

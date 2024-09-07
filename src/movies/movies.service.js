@@ -18,7 +18,7 @@ async function list(is_showing) {
 }
 
 async function read(movie_id) {
-  const allMovies = knex("movies")
+  const allMovies = db("movies")
     .select("*")
     .where({ movie_id: movie_id })
     .first();
