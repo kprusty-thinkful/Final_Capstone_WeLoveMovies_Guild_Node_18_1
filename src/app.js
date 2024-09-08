@@ -11,11 +11,6 @@ const reviewsRouter = require("./reviews/reviews.router");
 app.use(cors());
 app.use(express.json());
 
-// TODO: Add your code here
-app.get("/", (req, res) => {
-  res.send("hello");
-});
-
 app.use("/movies", moviesRouter);
 app.use("/theaters", theatersRouter);
 app.use("/reviews", reviewsRouter);
