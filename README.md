@@ -35,3 +35,9 @@ Checkout the API documentation definitions:
     404 Not Found: If a route does not exist.
     405 Method Not Allowed: If the wrong HTTP method is used for a route.
 ```
+## Deployment
+This application is deployed using Render. You can use the application using the below deployed version of the 
+application. https://final-capstone-welovemovies-guild-node-3n9k.onrender.com/
+
+* Please note that there is no home page for the app, you would have to visit the routes specified in the 
+API documentation readme files to see the application in action.
